@@ -1,0 +1,18 @@
+h1 {
+		color: teal;
+	}
+
+img {width: 400px;
+	}
+
+#thirdDiv{
+		width: 500px; 
+		height: 600px;
+		background-color: mediumaquamarine;
+		padding: 50px;
+		border: 10px solid teal;
+	}
+#spanID{
+		font-size: 18px;
+		margin: 50px;
+	}
