@@ -1,0 +1,56 @@
+* Homework: Javascript II
+
+Conceptos trabajados EN MODULO 3 
+
+Operadores logicos:
+
+Se trata de operadores que nos devuelven "true" o "false", que significan verdadero o falso en castellano, si se cumple una condicion. 
+
+&&: Operador que significa "Y" o "AND", va a devolver el resultado "true", mientras cumpla la condicion de que todas las expresiones sean verdaderas, de lo contrario va a devolver "false".
+Ejemplo:
+
+si decimos que
+
+ 1 > 0 && 1===1
+
+ En la primera expresion decimos que 1 es mayor que 0, y en la segunda que 1 es completamente igual a 1, por lo que nos devolverá un "true", ya que estas dos afirmaciones son verdaderas
+
+ ||: Operador que significa "O" u "OR", nos va a devolver "true" si se cumple la condicion de que al menos una expresion sea verdadera.
+
+ Ejemplo:
+
+ 1 > 0 || 1 === 2
+
+En la primera expresion decimos que 1 es mayor que 0, es verdadera y en la seguda que 1 es completamente igual, que es falsa, por lo que nos devolvera "true", por que se umple la condicion de que al menos una es verdadera.
+
+
+!: Operador que significa "not", lo que quiere decir que nos devolvera siempre el contrario de la/s expresiones que se estan analizando.
+
+Ejemplo:
+
+! 1 > 0 && 1 ===1
+
+en este caso nos devolvera "false", ya que a pesar de que lo que está despues de (!) sea verdadero, el NOT (!) nos indica que devuelva lo contrario.
+
+Bucles ´for´:
+ en este caso el for funciona como un bucle por que nos permite condicionar una ejecucion hasta que se cumpla una condición, por ejemplo "true" o "false", siempre debera estar acompañado de una variable (var)
+
+ Como se debe escribir (sintaxis) 
+for (aca ira una variable){ aca la ejecucion que le pedimos}
+
+Ejemplo:
+ for (var i = 0; i < 10; i =++) {
+ console.log(i);
+ }
+
+ esto quiere decir que primero la variable (var i = 0), es igual a 0, luego que i es menor a 10, por lo que se va ejecutal hasta el 9 y por ultimo que establecemos que i (i++) va a ser su valor actual mas uno.
+ y cuando utilizamos el bucle "for" decimos que se tiene que ejecutar hasta que las declaraciones que anteriormente nombramos, que seran interpretadas una a una, sea falsa.
+Entonces si digo que la var i=0 e ingreso console.log(i), nos aparecera en consola el 0.
+Luego continuara en forma de bucle interpretando las siguientes expresiones, si decimos que (i++)  tendrá un valor aumentara su valor actual a uno mas, por lo que ahora su valor será 1, se ejecutará entonces en consola el numero 1.
+
+Y por ultimo estamos indicando que (i<10), por lo que quiere decir que llegará hasta el numero 9.
+
+
+ 
+
+
