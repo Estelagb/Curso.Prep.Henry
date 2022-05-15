@@ -1,0 +1,13 @@
+Homework
+Explicacion ARRAY
+ El array tiene el funcionamiento de contenedor de ciertos elementos que se almacenaran dentro de ella, cada uno de estos elementos tendra una posicion que le dará un orden, la posicion a diferencia de la vida real en el contenedor array comenzara a partir del 0, por lo que el primer elemento tendrá la posision 0, el segundo la posision 1 y así sucesivamente.
+
+ Una analogia que podriamos utilizar seria una lista de estudiantes de un aula, donde el contenedor (array) lleva el nombre de "alumnos", y cada uno de los alumnos serian los elementos u objetos de nuestro contenedor.
+
+ Cual seria la forma de escribirlo (sintaxis)
+
+ array = []
+
+ nombre del array es igual a [todos los elementos del array estarán ubicados acá]
+
+ alumnos = ["Maria", "Francisco","Lucia"]
