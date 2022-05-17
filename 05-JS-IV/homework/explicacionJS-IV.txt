@@ -1,0 +1,69 @@
+
+Explicación
+
+-Objetos
+-Propiedades
+-Métodos
+-Bucle For...in
+-Notacion de puntos vs notacion de corchetes
+
+Objetos: 
+	Sirve para agrupar distintos valores a un mismo contenedor. Supongamos que tenemos una entidad, puede ser cualquier cosa, una persona, una canasta, etc, a la cual podemos asociar distintos tipos de datos, como por ejemplo los datos asociados a una persona pueden ser nombre, edad, altura, o pensando en una canasta los datos asociodos a una canasta posrian ser "frutas", banana, manzana, estos datos o elementos estaran relacionados con una unica entidad que seria en estos casos la persona o la canasta. 
+Ejemplo
+	El objeto canasta, contiene distintas frutas este objeto "canasta" contiene manzanas (esta seria la clave o Key) y la cantidad de manzanas que contiene seria el valor 
+	(Value).
+	Este objeto "canasta" podria contener distintas claves "frutas" o bien podria contener cualquier otro elemento como sandwiches, o manteles, etc. Y el valor puede ser tanto un numero, un ´string´ (cadena de texto), o un booleano.
+
+Propiedades: 
+	Cada uno de los elementos o datos asociados a la entidad (objeto) se denominan propiedades, cada propiedad está determinada por una clave (key) y un valor (value) que es el valor que tiene la clave. Entonces las propiedades serian cada una de las claves "Key",en el ejemplo anterior serian "manzanas", y el valor podria ser 4 (numero), verdes (string), o true (booleano).
+
+Métodos: 
+ 	Los metodos serian la capacidad que tiene un objeto, las cuales son ejecutadas por JavaScript. Es como una function pero relacionada a los objetos.
+
+Bucle for...in: 
+	Funcionan como los bucles pero en este caso realacionados a objetos, sabemos que en los bucles podemos utilizar la variable indice "i" lo que en este caso no nos serviria ya que los valores estan relacionados a una propiedad y no a un índice. Un bucle permite interactuar con cada uno de los elementos de un contenedor como lo son los objetos y los datos que se relacionan a esta, que son las propiedades o los valores del objeto.
+
+
+Ejemplo 
+	si yo quiero visualizar en consola cada una de las propiedades que tiene un objeto utilizare la sintaxis 
+for ( let clave in persona1) {
+	console.log(clave)
+}
+ 	nos mostrara todo el recorrido de las propiedades de este objeto que seria persona1
+
+ 	y si quisieramos que nos muestre en consola las propiedades con sus respectivos valores esta seria la sintaxis
+
+ for (let clave in persona1){
+ 	console.log(persona1[clave])
+ }
+
+ 	nos devolvera todas las propiedades con los valores de cada una, podrian ser por ejemplo:
+ nombre
+ 'Fabian'
+ edad
+ 27
+ cursando
+ true
+
+
+ 	Para poder llamar a algun valor podemos hacerlo de dos maneras
+ Dot notation(notacion de puntos):
+ 	 Es cuando llamamos a al valor de una propiedad dentro de un objeto. Tomando el ejemplo de arriba si queremos llamar al valor de la propiedad edad del objeto perosna1, esta seria la sintaxis:
+
+ Objeto.propiedad;  ---   persona1.edad;
+
+ 	En este caso la propiedad llamada desde dot notation es de manera literal un string
+
+ Bracket notation(notacion de corchetes):
+ 	Es cuando llamamos al valor con esta sintaxis:
+
+ Objeto[´propiedad´]; --- persona1[´nombre´];
+
+ 	a diferencia de Dot notation el valor puede ser llamado a partir de una variable. Por ejemplo si declaramos una variable:
+ const usuario= ´nombre´
+
+ entonces podemos llamarla
+
+ Objeto[variable] --- persona1[usuario]
+
+
