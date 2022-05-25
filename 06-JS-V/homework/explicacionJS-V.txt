@@ -1,0 +1,37 @@
+
+Explicacion:
+
+-Prototype
+-Constructor (de clases)
+
+
+Prototype (Prototipo):
+Para entender esto antes tendriamos que explicar que todos los objetos en JavaScript estan relacionados con otros objetos y de la cual son contenedoras, es decir que podriamos decir que cada objeto pertenece a a una familia como por ejemplo un Padre (este seria el prototipo del objeto en cuestion) del cual procede; y que a su vez este procede de otro que podriamos llamar abuelo (este seria el prototipo de el objeto Padre), esto es una simple analogia pero que podria ayudarnos a entender.
+La idea de prototipo nos ayuda a ahorrar codigo ya que nos permite acceder los "metodos" de los ascendentes es decir del Padre y abuelo, lo que nos lleva a la idea de "herencia". Esta herencia nos permite como descendientes acceder a ellas una vez creado en el prototype y en cualquier momento.
+
+Constructor (Constructor de clases): Se trata de la forma en que se construye una "clase", una clase es una plantilla que puede ser utilizado en cualquier momento, y esto ayuda a no escribir muchas veces el mismo codigo ya que lo podemos utilizar cuando sea necesario. Un ejemplo de esto podria ser una grilla relizada en excel con distintos datos a completar por ejemplo una planilla de cada uno de los grados de una escuela:
+
+Alumnos de la escuela
+Grado:
+Division:
+Nombre: 
+Apellido:
+Edad:
+ 
+ La "clase" seria Alumnos de la escuela y las "propiedades" de esta clase serían, grado, división, nombre, apellido y edad. una vez que se ingresen los argumentos a cada una de las propiedades se producirá un objeto, al que podriamos llamar alumno1, o el mismo apellido del alumno por ejemplo. Ahora bien pensandolo desde excel lo que tenemos que hacer es posicionarnos en la columna y fila que corresponda y escribir los datos de cada alumno, sin embargo cuando hablamos de JavaScript es posible ingresar los datos (valores) de cada una de las propiedades, por medio de codigo.
+ Hay distintas formas de costruir una clase y cuna de ellas es functions constructors, es posible realizarlo con esta sintaxis:
+
+ function Alumnos () {
+     this.grado = grado;
+     this.division = división
+     this. nombre = nombre;
+     this.apellido = apellido;
+     this.edad = edad;
+ }
+
+de esta manera construimos una plantilla que lleva el nombre Alumnos y en la que le podemos agregar los datos de esta manera:
+
+var Maria = new Alumnos ('sexto', 'A', 'Maria', 'Juarez', 12)
+
+de esta manera creamos un nuevo objeto "Maria" utilizando la plantilla de la clase "Alumnos".
+
